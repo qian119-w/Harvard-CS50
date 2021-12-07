@@ -17,6 +17,7 @@ def generate_sample():
 
         # If we have a non-root node, sample conditional on parents
         if isinstance(state.distribution, pomegranate.ConditionalProbabilityTable):
+            # Return a random sample from the conditional probability table.
             sample[state.name] = state.distribution.sample(parent_values=parents)
 
         # Otherwise, just sample from the distribution alone

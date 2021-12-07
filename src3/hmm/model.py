@@ -1,7 +1,7 @@
 from pomegranate import *
 import numpy
 
-# Observation model for each state
+# Observation model for each state / emission probabilities
 sun = DiscreteDistribution({
     "umbrella": 0.2,
     "no umbrella": 0.8
